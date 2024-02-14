@@ -8,6 +8,7 @@ const array1 = [1,2,3,4];
 let array2 = [...array1, 5];
 // array2.push(5); push metthod add 5 to the two arrays.
 
+// multiply all numbers with map method
 const array3 =array2.map( function(number){
     return number * 2;
 } );
