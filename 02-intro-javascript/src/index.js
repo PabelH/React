@@ -6,8 +6,18 @@
 // sayHi = 30;
 // better idea, use a const
 
+
 const sayHi = function (firstName){
     return `Hi ${firstName}`;
 }
 
+//arrow functions
+const sayHi2 = (firstName) => {
+    return `Hi ${firstName}`;
+}
+
+
+
+
 console.log(sayHi('Casiano'));
+console.log(sayHi2('Sipriano'));
