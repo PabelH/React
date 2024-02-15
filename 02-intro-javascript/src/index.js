@@ -29,3 +29,10 @@ console.log(sayHi('Casiano'));
 console.log(sayHi2('Sipriano'));
 console.log(sayHi3('Pasiano'));
 console.log(sayHi4());
+
+const getUser = () => {
+    return {
+        uid: '1234',
+        username: 'PabelH'
+    }
+}
