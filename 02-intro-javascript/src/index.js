@@ -40,3 +40,15 @@ const getUser = () => (
 
 const user = getUser;
 console.log(user);
+
+function getActiveUser(name){
+    return {
+        uid: '1234',
+        userName: name
+    }
+}
+
+const activeUser = getActiveUser('Pabelon');
+console.log(activeUser);
+
+//HW trasform it in an arrow function
