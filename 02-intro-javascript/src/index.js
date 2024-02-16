@@ -56,13 +56,16 @@ console.log(user);
 //return an implicit onject
 //test
 
-function getActiveUser(name){
-    return {
+const getActiveUser = (name) => (
+     {
         uid: '1234',
         userName: name
-    }
-}
+    });
+
 
 
 const activeUser = getActiveUser('Pabelon');
 console.log(activeUser);
+
+const activeUser2 = getActiveUser('Pabelocko');
+console.log(activeUser2);
