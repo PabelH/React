@@ -36,4 +36,7 @@ const getUser = () => (
      {
         uid: '1234',
         username: 'PabelH'
-    })
+    });
+
+const user = getUser;
+console.log(user);
