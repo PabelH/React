@@ -30,9 +30,10 @@ console.log(sayHi2('Sipriano'));
 console.log(sayHi3('Pasiano'));
 console.log(sayHi4());
 
-const getUser = () => {
-    return {
+
+//you can add () foe the return un an arrow function.
+const getUser = () => (
+     {
         uid: '1234',
         username: 'PabelH'
-    }
-}
+    })
