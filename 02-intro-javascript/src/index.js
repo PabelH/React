@@ -21,9 +21,14 @@ const person = {
 // console.log(age);
 // console.log(key);
 
-const returnPerson = (user)=> {
-    const {name1, age, key} = user;
-    console.log(name1, age, key);
+// const returnPerson = (user)=> {
+//     const {name1, age, key} = user;
+//     console.log(name1, age, key);
+// }
+//you can destructure directly in the argument
+const returnPerson = ({name1, age})=> {
+    console.log(name1, age);
 }
+
 
 returnPerson(person);
