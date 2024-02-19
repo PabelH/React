@@ -26,8 +26,13 @@ const person = {
 //     console.log(name1, age, key);
 // }
 //you can destructure directly in the argument
-const returnPerson = ({name1, age})=> {
-    console.log(name1, age);
+// const returnPerson = ({name1, age})=> {
+//     console.log(name1, age);
+// }
+
+//you can add props if doesn´t exist
+const returnPerson = ({name1, age, range = 'Captain'})=> {
+    console.log(name1, age, range);
 }
 
 
