@@ -6,6 +6,8 @@ const person = {
     key:123,
 };
 
+const {name} = person;
+
 console.log(person.name);
-console.log(person.age);
-console.log(person.key);
+// console.log(person.age);
+// console.log(person.key);
