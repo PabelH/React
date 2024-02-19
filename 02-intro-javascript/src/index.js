@@ -6,6 +6,7 @@ const person = {
     key:123,
 };
 
+// extract this information from this object
 const {name} = person;
 
 console.log(person.name);
