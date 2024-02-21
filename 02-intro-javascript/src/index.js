@@ -31,9 +31,16 @@ const person = {
 // }
 
 //you can add props if doesn´t exist
-const returnPerson = ({name1, age, key, range = 'Captain'})=> {
-    console.log(name1, age, range);
+const usecontext = ({name1, age, key, range = 'Captain'})=> {
+    // console.log(name1, age, range);
+    return {
+        keyName: key,
+        age
+        //in JS ES6 key:key = key
+    }
 }
 
+//if you want to rename all the same variable or function names, press F2
+const superHero = usecontext(person);
 
-returnPerson(person);
+console.log(superHero);
