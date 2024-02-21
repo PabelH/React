@@ -35,12 +35,21 @@ const usecontext = ({name1, age, key, range = 'Captain'})=> {
     // console.log(name1, age, range);
     return {
         keyName: key,
-        age
+        age,
         //in JS ES6 key:key = key
+        ubication:{
+            lat:1.4523,
+            lng:2.3654,
+
+        }
+
     }
 }
 
 //if you want to rename all the same variable or function names, press F2
-const superHero = usecontext(person);
+const {keyName, age, ubication:{lat,lng}} = usecontext(person);
 
-console.log(superHero);
+console.log(keyName, age);
+
+//  if you need objects in objects (nested destructuring)
+console.log(lat,lng);
