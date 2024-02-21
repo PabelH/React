@@ -3,7 +3,7 @@
 const person = {
     name1: 'Pabelon',
     age: 30,
-    key:123,
+    key:'PABELOCKO',
 };
 
 // extract this information from this object
@@ -31,7 +31,7 @@ const person = {
 // }
 
 //you can add props if doesn´t exist
-const returnPerson = ({name1, age, range = 'Captain'})=> {
+const returnPerson = ({name1, age, key, range = 'Captain'})=> {
     console.log(name1, age, range);
 }
 
