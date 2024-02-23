@@ -18,5 +18,8 @@ const [ , ,C1] = characters;
 console.log(C1);
 
 const returnArray = () => {
-    return ['ABC',123]
+    return ['ABC',123];
 }
+
+const arr = returnArray();
+console.log(arr);
