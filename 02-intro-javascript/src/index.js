@@ -28,3 +28,13 @@ console.log(arr);
 const [string, number1] = returnArray();
 console.log(string);
 console.log(number1);
+
+//homework
+//print in console value 0 and 1 with the names name and setName
+const useState = (value) => {
+    return [value, ()=> {console.log('Hello Pabello')}];
+}
+// solution
+//const arr2 = useState('Ph');
+ 
+//  console.log(arr2);
