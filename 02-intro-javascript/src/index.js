@@ -23,3 +23,8 @@ const returnArray = () => {
 
 const arr = returnArray();
 console.log(arr);
+
+//using destructuring
+const [string, number1] = returnArray();
+console.log(string);
+console.log(number1);
