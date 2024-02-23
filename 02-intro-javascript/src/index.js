@@ -3,4 +3,16 @@
 
 const characters =['Pabelon','Pabelocko','Pabelonches'];
 
-console.log(characters);
+// console.log(characters);
+//one way
+// console.log(characters[0]);
+// console.log(characters[1]);
+// console.log(characters[2]);
+//destructuring
+
+// const [C1,] = characters;
+// console.log(C1);
+
+//if you need another item ex #3
+const [ , ,C1] = characters;
+console.log(C1);
