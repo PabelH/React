@@ -16,3 +16,7 @@ const characters =['Pabelon','Pabelocko','Pabelonches'];
 //if you need another item ex #3
 const [ , ,C1] = characters;
 console.log(C1);
+
+const returnArray = () => {
+    return ['ABC',123]
+}
