@@ -31,10 +31,11 @@
 
 //homework
 //print in console value 0 and 1 with the names name and setName
-const useState1 = ( valor ) => {
-    return [ valor, ()=>{ console.log('Hola Mundo') } ];
+const useState1 = ( value ) => {
+    return [ value, ()=>{ console.log('Hello Pabello') } ];
 }
 // solution
-const arr1 = useState1('Pabelon');
+const [name2, setName] = useState1('Pabelon');
 
-console.log(arr1);
+console.log(name2);
+setName();
