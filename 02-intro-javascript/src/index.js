@@ -28,7 +28,7 @@ const getHeroByIdAsync = ( id ) => {
             if (hero) {
             resolve(hero);
             } else {
-            reject();
+            reject('We can\'t find the hero');
             }
         }, 2000 )
         
@@ -36,8 +36,11 @@ const getHeroByIdAsync = ( id ) => {
     });
 }
 
-getHeroByIdAsync(10)
-    .then(hero => console.log('Hero', hero))
-    .catch( err => console.error('We can\'t find the hero'));
+getHeroByIdAsync(1)
+    // .then(hero => console.log('Hero', hero))
+    // .catch( err => console.error('We can\'t find the hero'));
+    // if you only want to send the first argument 
+    .then(console.log)
+    .catch(console.warn);
 
 
