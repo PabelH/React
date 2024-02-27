@@ -25,14 +25,19 @@ const getHeroByIdAsync = ( id ) => {
         setTimeout( () => {
             const hero = getHeroById(id);
             // console.log(hero);
+            if (hero) {
             resolve(hero);
+            } else {
+            reject();
+            }
         }, 2000 )
         
     
     });
 }
 
-getHeroByIdAsync(4)
+getHeroByIdAsync(10)
     .then(hero => console.log('Hero', hero))
+    .catch( err => console.error('We can\'t find the hero'));
 
 
