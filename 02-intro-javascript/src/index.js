@@ -20,7 +20,8 @@ import { getHeroById } from './bases/08-imp-exp';
 // .catch( err => console.warn('We can\'t find the hero'));
 
 const getHeroByIdAsync = ( id ) => {
-    const prom1 = new Promise((resolve,reject) =>{
+    
+    return new Promise((resolve,reject) =>{
         setTimeout( () => {
             const hero = getHeroById(id);
             // console.log(hero);
@@ -31,5 +32,7 @@ const getHeroByIdAsync = ( id ) => {
     });
 }
 
+getHeroByIdAsync(4)
+    .then(hero => console.log('Hero', hero))
 
 
