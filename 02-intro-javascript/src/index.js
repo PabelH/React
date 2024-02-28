@@ -1,5 +1,5 @@
 // console.log('What is happening here?');
-const apiKey = '';
+const apiKey = 'your apikey';
 
 const request = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`);
 
