@@ -1,6 +1,10 @@
 // console.log('What is happening here?');
 //using promises
-// const getImageProm = () => new Promise( resolve => resolve('https://dsafñjnfñklasdmfñlka'));
+// const getImageProm = () => new Promise( resolve => resolve('https://aFalseUrl'));
 // getImageProm().then(console.log);
-//using async and awayt
+//using the async keyword turns a normal function into a promise
+const getImg = async() => {
+    return 'https://aFalseUrl';
+}
 
+getImg().then(console.log);
