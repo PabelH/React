@@ -9,6 +9,7 @@ const active = true;
 //     message = '=(';
 // }
 //better way to do 
+const message = (active) ? 'Eaaaaaa!!!' : 'Ouuuuuu';
 
 
 
