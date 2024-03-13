@@ -7,9 +7,7 @@
 
 const FirstApp = () => {
   return (
-    <div>
-      
-    </div>
+    <div>Hello Pabelon </div>
   )
 }
 
