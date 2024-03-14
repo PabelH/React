@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 //you can rename your imports
 // import  App  from "./HelloPabello";
 import FirstApp from "./FirstApp";
+import './styles.css'
 
 
 
