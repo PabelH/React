@@ -10,7 +10,7 @@
 
 // const getGreet = () => 'Kiobole';
 
-const FirstApp = ({title}) => {
+const FirstApp = ({title = 'Welcome'}) => {
     
   return (
     <> 
