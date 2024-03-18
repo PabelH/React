@@ -10,7 +10,7 @@
 
 // const getGreet = () => 'Kiobole';
 
-const FirstApp = ({title = 'Welcome'}) => {
+const FirstApp = ({title, subTitle}) => {
     
   return (
     <> 
@@ -20,7 +20,7 @@ const FirstApp = ({title = 'Welcome'}) => {
     {/* <code> { JSON.stringify( newMessage) } </code> */}
     {/* <h1> { getGreet() } </h1>  */}
     <h1>{title}</h1>
-    <h2>I am Learning</h2>
+    <h2>{subTitle + 2}</h2>
     
     </>
   )
