@@ -10,7 +10,7 @@
 
 // const getGreet = () => 'Kiobole';
 
-const FirstApp = (props) => {
+const FirstApp = ({title}) => {
     
   return (
     <> 
@@ -19,7 +19,7 @@ const FirstApp = (props) => {
     {/* <h1> { newMessage.message } </h1>  Ifyou need the object do this*/}
     {/* <code> { JSON.stringify( newMessage) } </code> */}
     {/* <h1> { getGreet() } </h1>  */}
-    <h1>{props.title}</h1>
+    <h1>{title}</h1>
     <h2>I am Learning</h2>
     
     </>
