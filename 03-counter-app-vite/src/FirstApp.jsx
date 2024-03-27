@@ -11,6 +11,9 @@
 // const getGreet = () => 'Kiobole';
 
 const FirstApp = ({title, subTitle}) => {
+  if (!title) {
+    throw new Error( 'title doesn\'t exist' )
+  }
     
   return (
     <> 
