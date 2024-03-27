@@ -9,11 +9,12 @@
 // };
 
 // const getGreet = () => 'Kiobole';
+import PropTypes  from "prop-types"
 
 const FirstApp = ({title, subTitle}) => {
-  if (!title) {
-    throw new Error( 'title doesn\'t exist' )
-  }
+  // if (!title) {
+  //   throw new Error( 'title doesn\'t exist' )
+  // }
     
   return (
     <> 
@@ -23,10 +24,17 @@ const FirstApp = ({title, subTitle}) => {
     {/* <code> { JSON.stringify( newMessage) } </code> */}
     {/* <h1> { getGreet() } </h1>  */}
     <h1>{title}</h1>
-    <h2>{subTitle + 2}</h2>
+    <h2>{subTitle}</h2>
     
     </>
   )
 }
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.number.isRequired
+}
+
+
 
 export default FirstApp

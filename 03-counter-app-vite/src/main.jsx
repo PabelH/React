@@ -13,6 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* <FirstApp /> */}
         {/* <App /> */}
 
-        <FirstApp  subTitle={123}/>
+        <FirstApp title={'String'} subTitle={123} />
     </React.StrictMode>
 )
