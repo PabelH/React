@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 // import  App  from "./HelloPabello";
 import FirstApp from "./FirstApp";
 import './styles.css'
+import CounterApp from "./CounterApp";
 
 
 
@@ -13,6 +14,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* <FirstApp /> */}
         {/* <App /> */}
 
-        <FirstApp  />
+        <CounterApp value={5} />
     </React.StrictMode>
 )
