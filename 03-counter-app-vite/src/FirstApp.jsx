@@ -11,7 +11,7 @@
 // const getGreet = () => 'Kiobole';
 import PropTypes  from "prop-types"
 
-const FirstApp = ({title, subTitle}) => {
+const FirstApp = ({title, subTitle, author}) => {
   // if (!title) {
   //   throw new Error( 'title doesn\'t exist' )
   // }
@@ -25,6 +25,7 @@ const FirstApp = ({title, subTitle}) => {
     {/* <h1> { getGreet() } </h1>  */}
     <h1>{title}</h1>
     <h2>{subTitle}</h2>
+    <h2>{author}</h2>
     
     </>
   )
@@ -32,12 +33,14 @@ const FirstApp = ({title, subTitle}) => {
 
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired
+  subTitle: PropTypes.string.isRequired,
+  
 }
 
 FirstApp.defaultProps = {
   title: 'No Title',
-  subTitle: 'No Subtitle'
+  subTitle: 'No Subtitle',
+  author: 'Pabelon'
 }
 
 
