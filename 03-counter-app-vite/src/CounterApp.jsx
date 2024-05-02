@@ -2,7 +2,10 @@ import PropTypes  from "prop-types"
 
 const CounterApp = ({value}) => {
 
-  const handleAdd = (event) => console.log(event);
+  const handleAdd = (event, newValue) => {
+    // console.log(event)
+    console.log(newValue);
+  }
 
 
   return (
@@ -10,7 +13,7 @@ const CounterApp = ({value}) => {
     <h1>CounterApp</h1>
     <h2> { value } </h2>
 
-    <button onClick={handleAdd }>
+    <button onClick={ (event) => handleAdd(event, 'Hi!')}>
       +1
     </button>
     </>
