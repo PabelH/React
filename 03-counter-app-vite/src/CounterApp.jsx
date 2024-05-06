@@ -6,7 +6,9 @@ const CounterApp = ({ value }) => {
   const [ counter, setCounter ] = useState( 0 );
 
   const handleAdd = () => {
-    setCounter( counter + 1 )
+    // console.log(event);
+    // setCounter( counter + 1 )
+    
   
   }
 
