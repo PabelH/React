@@ -7,8 +7,10 @@ const CounterApp = ({ value }) => {
 
   const handleAdd = () => {
     // console.log(event);
-    // setCounter( counter + 1 )
-    
+    // setCounter( counter + 1 );
+    setCounter( (c) => c + 1 );
+    // c = actual counter value
+
   
   }
 
