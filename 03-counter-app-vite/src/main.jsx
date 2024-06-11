@@ -14,6 +14,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* <FirstApp /> */}
         {/* <App /> */}
 
-        <CounterApp value={5} />
+        <CounterApp value={0} />
     </React.StrictMode>
 )
