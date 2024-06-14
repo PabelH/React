@@ -18,7 +18,7 @@ const getImagen = async() => {
         document.body.append( img );
 
     } catch (error) {
-        // manejo del error
+        // error handle
         console.error(error)
     }
     
