@@ -1,5 +1,5 @@
 
-describe('Tet in <Democomponent />', () => {
+describe('Test in <Democomponent />', () => {
     test('this test should not fail',()=>{
         // initialization
         const message1 = 'Hello Pabello';
