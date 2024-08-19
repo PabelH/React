@@ -9,6 +9,8 @@ describe('Test in 05-funciones', () => {
 
       const user = getUser();
       
+      // expect( testUser ).toStrictEqual( user );
+      expect( testUser ).toEqual( user );
 
 
   });
