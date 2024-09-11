@@ -1,7 +1,7 @@
 // console.log('What is happening here?');
 // array destructuring
 
-const characters =['Pabelon','Pabelocko','Pabelonches'];
+// const characters =['Pabelon','Pabelocko','Pabelonches'];
 
 // console.log(characters);
 //one way
@@ -17,9 +17,9 @@ const characters =['Pabelon','Pabelocko','Pabelonches'];
 // const [ , ,C1] = characters;
 // console.log(C1);
 
-// const returnArray = () => {
-//     return ['ABC',123];
-// }
+export const returnArray = () => {
+    return ['ABC',123];
+}
 
 // const arr = returnArray();
 // console.log(arr);
@@ -31,11 +31,11 @@ const characters =['Pabelon','Pabelocko','Pabelonches'];
 
 //homework
 //print in console value 0 and 1 with the names name and setName
-const useState1 = ( value ) => {
-    return [ value, ()=>{ console.log('Hello Pabello') } ];
-}
-// solution
-const [name2, setName] = useState1('Pabelon');
+// const useState1 = ( value ) => {
+//     return [ value, ()=>{ console.log('Hello Pabello') } ];
+// }
+// // solution
+// const [name2, setName] = useState1('Pabelon');
 
-console.log(name2);
-setName();
+// console.log(name2);
+// setName();
