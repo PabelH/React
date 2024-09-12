@@ -22,7 +22,7 @@ describe('Test in 08-imp-exp', () => {
 
     });
 
-    //HW getHeroByOwner
+    //HW getHeroByOwner DC
     test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
 
         const owner = 'DC';
@@ -43,6 +43,8 @@ describe('Test in 08-imp-exp', () => {
         expect( hero.length ).toBe( 3 )
 
     });
+
+    //HW Marvel
 
     test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
 
