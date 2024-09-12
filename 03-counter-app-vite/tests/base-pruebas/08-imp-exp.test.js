@@ -1,4 +1,5 @@
 import { getHeroById, getHeroByOwner } from "../../../02-intro-javascript/src/bases/08-imp-exp";
+import heroes from "../../src/Data/heroes";
 
 
 
@@ -35,6 +36,18 @@ describe('Test in 08-imp-exp', () => {
           ] )
 
     });
+
+    //another way
+    test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
+
+        const owner = 'DC';
+        const hero = getHeroByOwner( owner );
+        console.log( hero );
+        expect( hero ).toEqual( heroes.filter((heroes) => heroes.owner === owner) )
+
+    });
+
+
     test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
 
         const owner = 'DC';
@@ -46,7 +59,7 @@ describe('Test in 08-imp-exp', () => {
 
     //HW Marvel
 
-    test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
+    test('this test should return an array with heroes by Owner( getHeroByOwner )',()=>{
 
         const owner = 'Marvel';
         const hero = getHeroByOwner( owner );
@@ -57,7 +70,7 @@ describe('Test in 08-imp-exp', () => {
           ] )
 
     });
-    test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
+    test('this test should return an array with heroes by Owner',()=>{
 
         const owner = 'Marvel';
         const hero = getHeroByOwner( owner );
