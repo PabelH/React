@@ -44,6 +44,25 @@ describe('Test in 08-imp-exp', () => {
 
     });
 
-    
+    test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
+
+        const owner = 'DC';
+        const hero = getHeroByOwner( owner );
+        console.log( hero );
+        expect( hero ).toEqual( [
+            { id: 1, name: 'Batman', owner: 'DC' },
+            { id: 3, name: 'Superman', owner: 'DC' },
+            { id: 4, name: 'Flash', owner: 'DC' }
+          ] )
+
+    });
+    test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
+
+        const owner = 'DC';
+        const hero = getHeroByOwner( owner );
+        console.log( hero.length );
+        expect( hero.length ).toBe( 3 )
+
+    });
   
 });
