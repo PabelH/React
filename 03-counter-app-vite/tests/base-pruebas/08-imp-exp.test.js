@@ -28,7 +28,7 @@ describe('Test in 08-imp-exp', () => {
 
         const owner = 'DC';
         const hero = getHeroByOwner( owner );
-        console.log( hero );
+        //console.log( hero );
         expect( hero ).toEqual( [
             { id: 1, name: 'Batman', owner: 'DC' },
             { id: 3, name: 'Superman', owner: 'DC' },
@@ -37,7 +37,7 @@ describe('Test in 08-imp-exp', () => {
 
     });
 
-    //another way
+    //another way preferably
     test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
 
         const owner = 'DC';
@@ -63,13 +63,23 @@ describe('Test in 08-imp-exp', () => {
 
         const owner = 'Marvel';
         const hero = getHeroByOwner( owner );
-        console.log( hero );
+        //console.log( hero );
         expect( hero ).toEqual( [
             { id: 2, name: 'Spiderman', owner: 'Marvel' },
             { id: 5, name: 'Wolverine', owner: 'Marvel' }
           ] )
 
     });
+    test('this test should return undefind if there is no an ID  (getHeroById)',()=>{
+
+        const owner = 'Marvel';
+        const hero = getHeroByOwner( owner );
+        console.log( hero );
+        expect( hero ).toEqual( heroes.filter((heroes) => heroes.owner === owner) )
+
+    });
+
+
     test('this test should return an array with heroes by Owner',()=>{
 
         const owner = 'Marvel';
