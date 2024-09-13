@@ -28,7 +28,7 @@ export const getHeroByIdAsync = ( id ) => {
             if (hero) {
             resolve(hero);
             } else {
-            reject('We can\'t find the hero');
+            reject('We can\'t find the hero ' + id);
             }
         }, 1000 )
         

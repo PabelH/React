@@ -19,17 +19,13 @@ describe('Test in 09-promises', () => {
     });
     test('this test should return an error if hero does not exist',( done )=>{
         
-        const id = 1;
+        const id = 100;
         getHeroByIdAsync(id)
-            .then( hero => {
-                expect(hero).toEqual({
-                    id: 1,
-                    name: 'Batman',
-                    owner: 'DC'
-                });
+            .catch( error => {
+                expect( error ).toBe( `We can't find the hero ${ id }` );
                 done();
-            });
-
+            } );
+                
     });
   
 });
