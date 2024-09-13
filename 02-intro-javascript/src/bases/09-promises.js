@@ -1,7 +1,7 @@
 // console.log('What is happening here?');
 //Promise
 
-import { getHeroById } from './bases/08-imp-exp';
+import { getHeroById } from './08-imp-exp';
 
 // this code run 5 seconbds after
 // const prom1 = new Promise((resolve,reject) =>{
@@ -19,7 +19,7 @@ import { getHeroById } from './bases/08-imp-exp';
 // } )
 // .catch( err => console.warn('We can\'t find the hero'));
 
-const getHeroByIdAsync = ( id ) => {
+export const getHeroByIdAsync = ( id ) => {
     
     return new Promise((resolve,reject) =>{
         setTimeout( () => {
@@ -30,17 +30,17 @@ const getHeroByIdAsync = ( id ) => {
             } else {
             reject('We can\'t find the hero');
             }
-        }, 2000 )
+        }, 1000 )
         
     
     });
 }
 
-getHeroByIdAsync(1)
-    // .then(hero => console.log('Hero', hero))
-    // .catch( err => console.error('We can\'t find the hero'));
-    // if you only want to send the first argument 
-    .then(console.log)
-    .catch(console.warn);
+// getHeroByIdAsync(1)
+//     // .then(hero => console.log('Hero', hero))
+//     // .catch( err => console.error('We can\'t find the hero'));
+//     // if you only want to send the first argument 
+//     .then(console.log)
+//     .catch(console.warn);
 
 
