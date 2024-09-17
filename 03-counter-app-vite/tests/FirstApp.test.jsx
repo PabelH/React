@@ -6,8 +6,21 @@ describe('Test in <FirstApp />', () => {
     test('this test must match the snapshot"',()=>{
 
         const title = 'Hi MF'
-        render(<FirstApp title={ title }/>)
+        const {container} = render(<FirstApp title={ title }/>);
+        //console.log(container);
+        expect( container ).toMatchSnapshot();
+
+
         
+    });
+    test('this test must render the title in a h1 tag"',()=>{
+
+        const title = 'Hi MF'
+        const {container} = render(<FirstApp title={ title }/>);
+        //console.log(container);
+        expect( container ).toMatchSnapshot();
+
+
         
     });
   
