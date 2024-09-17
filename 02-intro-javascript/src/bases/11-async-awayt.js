@@ -20,20 +20,26 @@
 
 const getImg = async() => {
     try{
-    const apiKey = 'your apikey';
+    const apiKey = 'yourApiKey';
     const resp = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`);
     const {data} = await resp.json();
     // console.log(data);
     const {url} = data.images.original;
-    console.log(url);
-    const img = document.createElement('img');
-    img.src = url;
-    document.body.append(img);
+    //console.log(url);
+    // const img = document.createElement('img');
+    // img.src = url;
+    // document.body.append(img);
+    
+    return url;
 
     } catch (error) {
-        console.error();
+        //console.error();
+        return 'Image not found'
     }
 }
 
-getImg();
+export {
+    getImg
+}
+//getImg();
 
