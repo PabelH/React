@@ -3,21 +3,9 @@
 exports[`Test in <FirstApp /> this test must match the snapshot" 1`] = `
 <div>
   <h1>
+     
     Hi MF
-  </h1>
-  <h2>
-    No Subtitle
-  </h2>
-  <h2>
-    Pabelon
-  </h2>
-</div>
-`;
-
-exports[`Test in <FirstApp /> this test must render the title in a h1 tag" 1`] = `
-<div>
-  <h1>
-    Hi MF
+     
   </h1>
   <h2>
     No Subtitle
