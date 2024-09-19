@@ -17,9 +17,12 @@ describe('Test in <FirstApp />', () => {
 
         const title = 'Hi MF';
         const subTitle = 'No Subtitle';
-        const {getByText } = render(<FirstApp title={ title }/>);
+        const {getByText, getAllByText } = render(<FirstApp title={ title }/>);
         
-        expect( getByText(subTitle) ).toBeTruthy();
+        // expect( getByText(subTitle) ).toBeTruthy();
+        expect( getAllByText(subTitle).length ).toBe(2);
+
+
 
     });
   
