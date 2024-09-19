@@ -25,6 +25,7 @@ const FirstApp = ({title, subTitle, author}) => {
     {/* <h1> { getGreet() } </h1>  */}
     <h1 data-testid="test-title"> {title} </h1>
     <h2>{subTitle}</h2>
+    <h2>{subTitle}</h2>
     <h2>{author}</h2>
     
     </>
