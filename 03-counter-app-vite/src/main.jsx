@@ -11,11 +11,11 @@ import CounterApp from "./CounterApp";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <FirstApp
+        {/* <FirstApp
         title="Hi"
-        />
+        /> */}
         {/* <App /> */}
 
-        {/* <CounterApp value={0} /> */}
+        <CounterApp value={0} />
     </React.StrictMode>
 )
