@@ -41,8 +41,6 @@ describe('Test in <FirstApp />', () => {
             expect( screen.getAllByText(subTitle).length ).toBe(2);
 
     
-    
-    
     });
     
   
