@@ -16,6 +16,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         /> */}
         {/* <App /> */}
 
-        <CounterApp value={0} />
+        <CounterApp value={ 100 } />
     </React.StrictMode>
 )
