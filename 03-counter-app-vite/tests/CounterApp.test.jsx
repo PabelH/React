@@ -15,7 +15,9 @@ describe('Test in <CounterApp />', () => {
     test('This test should show the initial value of 100"',()=>{
 
         render(<CounterApp value={ initialValue }/>);
-        expect( initialValue ).toBe( 100 );
+        //expect( screen.getByText(100) ).toBeTruthy();
+        //another way
+        expect( screen.getByRole('heading',{level:2}).innerHTML ).toContain('100');
 
     });
 });
