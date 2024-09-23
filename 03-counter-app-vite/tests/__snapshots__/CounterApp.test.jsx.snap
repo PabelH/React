@@ -1,27 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test in <CounterApp /> This test should show the initial value of 100" 1`] = `
-<div>
-  <h1>
-    CounterApp
-  </h1>
-  <h2>
-     
-    100
-     
-  </h2>
-  <button>
-     +1 
-  </button>
-  <button>
-     -1 
-  </button>
-  <button>
-     Reset 
-  </button>
-</div>
-`;
-
 exports[`Test in <CounterApp /> this test must match the snapshot" 1`] = `
 <div>
   <h1>

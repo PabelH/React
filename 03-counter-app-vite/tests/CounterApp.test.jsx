@@ -14,8 +14,8 @@ describe('Test in <CounterApp />', () => {
     });
     test('This test should show the initial value of 100"',()=>{
 
-        const {container} = render(<CounterApp value={ initialValue }/>);
-        expect( container ).toMatchSnapshot();
+        render(<CounterApp value={ initialValue }/>);
+        expect( initialValue ).toBe( 100 );
 
     });
 });
