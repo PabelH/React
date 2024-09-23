@@ -4,11 +4,11 @@ import { render, screen } from "@testing-library/react";
 
 describe('Test in <CounterApp />', () => {
 
-    const title = 'CounterApp'
+    const initialValue = 100;
 
     test('this test must match the snapshot"',()=>{
 
-        const {container} = render(<CounterApp value={ 100 }/>);
+        const {container} = render(<CounterApp value={ initialValue }/>);
         expect( container ).toMatchSnapshot();
 
     });
