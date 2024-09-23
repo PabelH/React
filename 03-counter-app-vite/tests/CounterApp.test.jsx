@@ -20,4 +20,11 @@ describe('Test in <CounterApp />', () => {
         expect( screen.getByRole('heading',{level:2}).innerHTML ).toContain('100');
 
     });
+
+    test('This test must be increased with the +1 button"',()=>{
+
+        render(<CounterApp value={ initialValue }/>);
+        
+
+    });
 });
