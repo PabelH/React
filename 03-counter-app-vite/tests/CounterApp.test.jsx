@@ -21,7 +21,16 @@ describe('Test in <CounterApp />', () => {
 
     });
 
-    test('This test must be increased with the +1 button"',()=>{
+    test('This test must be increased with the +1 button',()=>{
+
+        render(<CounterApp value={ initialValue }/>);
+        fireEvent.click( screen.getByText('+1') );
+        //screen.debug();//you can see the DOM state
+        expect( screen.getByText('101') ).toBeTruthy();
+
+    });
+
+    test('This test must be decremented with the -1 button',()=>{
 
         render(<CounterApp value={ initialValue }/>);
         fireEvent.click( screen.getByText('+1') );
