@@ -25,7 +25,7 @@ describe('Test in <CounterApp />', () => {
 
         render(<CounterApp value={ initialValue }/>);
         fireEvent.click( screen.getByText('+1') );
-        screen.debug();
+        //screen.debug();//you can see the DOM state
         expect( screen.getByText('101') ).toBeTruthy();
 
     });
