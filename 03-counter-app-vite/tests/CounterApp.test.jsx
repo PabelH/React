@@ -1,5 +1,5 @@
 import CounterApp from "../src/CounterApp";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 
 
 describe('Test in <CounterApp />', () => {
@@ -24,7 +24,9 @@ describe('Test in <CounterApp />', () => {
     test('This test must be increased with the +1 button"',()=>{
 
         render(<CounterApp value={ initialValue }/>);
-        
+        fireEvent.click( screen.getByText('+1') )
+        expect( screen.getByText('101') ).toBeTruthy();
 
     });
+    
 });
