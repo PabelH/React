@@ -4,7 +4,7 @@ import { useState } from "react"
 
 const GifExpertApp = () => {
 
-  const [categories, setcategories] = useState()
+  const [categories, setCategories] = useState([ 'Fenomenoide' ])
 
   return (
     <>
