@@ -6,6 +6,9 @@ const GifExpertApp = () => {
 
   const [categories, setCategories] = useState([ 'Fenomenoide', 'Animaniacs' ]);
   const onAddCategory = () => {
+    //one way
+    //setCategories( cat => [ ...categories, 'one add' ] )
+    //another way
     const newCategory = categories.length + 1;
     setCategories([...categories, newCategory]);
   }
