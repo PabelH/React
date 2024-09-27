@@ -12,18 +12,27 @@ const AddCategory = () => {
     //     setInputValue(event.target.value);
     //clean code
     const onInputChange = ({target})=>{
-        console.log(target.value);
+        // console.log(target.value);
         setInputValue(target.value);
 
     }
+
+  const onSubmit = (event) => {
+    // console.log(event);
+    event.preventDefault();
+    console.log(inputValue);
+
+  }
   return (
-    <input 
+    <form onSubmit={ (event) => onSubmit(event) }>
+      <input 
         type="text"
         placeholder="Search gifs"
         value={ inputValue }
         //onChange={ (event) => onInputChange(event) }
         onChange={ onInputChange }
-    />
+      />
+    </form>
   )
 }
 
