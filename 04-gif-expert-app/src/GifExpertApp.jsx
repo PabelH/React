@@ -20,7 +20,7 @@ const GifExpertApp = () => {
       {/* Title */}
       <h1>GifExpertApp</h1>
       {/*Input  */}
-      <AddCategory setAddCategory='1' />
+      <AddCategory setAddCategory={setCategories} />
 
       {/*Gif List  */}
       <button onClick={onAddCategory}>Add</button>
