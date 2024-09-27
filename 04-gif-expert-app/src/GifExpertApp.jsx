@@ -23,7 +23,7 @@ const GifExpertApp = () => {
       <AddCategory setAddCategory={setCategories} />
 
       {/*Gif List  */}
-      <button onClick={onAddCategory}>Add</button>
+      {/* <button onClick={onAddCategory}>Add</button> */}
       <ol>
           {
           categories.map( category => {
