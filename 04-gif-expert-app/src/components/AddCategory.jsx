@@ -20,8 +20,10 @@ const AddCategory = ( {setCategories} ) => {
   const onSubmit = (event) => {
     // console.log(event);
     event.preventDefault();
+    if ( inputValue.trim().length <= 1 ) return;
     // console.log(inputValue);
     setCategories( (categories) => [inputValue, ...categories] );
+    setInputValue = '';
 
   }
   return (
