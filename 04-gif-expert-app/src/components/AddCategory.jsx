@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 
 
-const AddCategory = () => {
+const AddCategory = ( {setCategories} ) => {
 
 
     const [ inputValue, setInputValue ] = useState('123');
@@ -20,7 +20,8 @@ const AddCategory = () => {
   const onSubmit = (event) => {
     // console.log(event);
     event.preventDefault();
-    console.log(inputValue);
+    // console.log(inputValue);
+    setCategories( (categories) => [inputValue, ...categories] );
 
   }
   return (
