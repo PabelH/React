@@ -27,7 +27,9 @@ const AddCategory = ( {setCategories} ) => {
 
   }
   return (
-    <form onSubmit={ (event) => onSubmit(event) }>
+    //<form onSubmit={ (event) => onSubmit(event) }>
+    //clean code
+    <form onSubmit={ onSubmit }>
       <input 
         type="text"
         placeholder="Search gifs"
